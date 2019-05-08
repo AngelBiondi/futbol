@@ -1,0 +1,14 @@
+Soccer news feed
+
+{{#each news}}
+  <li>
+    {{postTitle}}
+    {{postContent}}
+    {{postedBy}}
+
+    <a href="details/{{_id}}">Details</a>
+    <a href="edit/{{_id}}">Edit</a>
+    <a href="delete/{{_id}}">X</a>
+
+  </li>
+{{/each}}

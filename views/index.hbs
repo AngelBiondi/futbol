@@ -1,0 +1,126 @@
+
+
+<!-- Page Content -->
+<div class="container">
+
+<div class="row">
+
+<!-- Blog Entries Column -->
+<div class="col-md-8">
+
+  <h1 class="my-4">Lastest News 
+   <p> <small>Everything you need to know</small></p>
+  </h1>
+
+  {{#each posts}}
+  <div class="card mb-4">
+    <img class="card-img-top" src= '{{image}}';   alt="Card image cap">
+    <div class="card-body">
+      <h2 class="card-title">{{title}}</h2>
+      <p class="card-text">{{text}}</p>
+      <a href="/new/{{_id}}" class="btn btn-primary">Read More &rarr;</a>
+    </div>
+    <div class="card-footer text-muted">
+      Posted on May 1, 2019 by
+      <a href="#">ESPN</a>     
+    </div>
+  </div>
+  {{/each}}
+  <!-- Blog Post 
+  <div class="card mb-4">
+    <img class="card-img-top" src= '../css/images/fcbll.jpg';   alt="Card image cap">
+    <div class="card-body">
+      <h2 class="card-title">Barcelona beats Liverpool and goes one step ahead to the UCL Final</h2>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+      <a href="/new1" class="btn btn-primary">Read More &rarr;</a>
+    </div>
+    <div class="card-footer text-muted">
+      Posted on May 1, 2019 by
+      <a href="#">ESPN</a>     
+    </div>
+  </div>
+
+  <!-- Blog Post 
+  <div class="card mb-4">
+    <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+    <div class="card-body">
+      <h2 class="card-title">Post Title</h2>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+      <a href="/new2" class="btn btn-primary">Read More &rarr;</a>
+    </div>
+    <div class="card-footer text-muted">
+      Posted on January 1, 2017 by
+      <a href="#">Start Bootstrap</a>
+    </div>
+  </div>
+
+  <!-- Blog Post 
+  <div class="card mb-4">
+    <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+    <div class="card-body">
+      <h2 class="card-title">Post Title</h2>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+       <a href="/new3" class="btn btn-primary">Read More &rarr;</a>
+    </div>
+    <div class="card-footer text-muted">
+      Posted on January 1, 2017 by
+      <a href="#">Start Bootstrap</a>
+    </div>
+  </div>
+  -->
+  <!-- Pagination -->
+  <ul class="pagination justify-content-center mb-4">
+    <li class="page-item">
+      <a class="page-link" href="#">&larr; Older</a>
+    </li>
+    <li class="page-item disabled">
+      <a class="page-link" href="#">Newer &rarr;</a>
+    </li>
+  </ul>
+
+</div>
+
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4">
+
+  
+  <!-- Side Widget -->
+  <div class="card my-4">
+    <h5 class="card-header">Quick News</h5>
+    <div class="card-body">
+     Neymar hits a fan after losing and faces FIFA sanction..
+    </div>
+  </div>
+
+</div>
+
+</div>
+<!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+<div class="container">
+<p class="m-0 text-center text-white">IronHack &copy; Angel Biondi</p>
+</div>
+<!-- /.container -->
+</footer>
+
+
+        
+      
+   
+    {{!-- <h1>Share something</h1>
+
+<form action="/savePostToTheDatabase" method="pOSt">
+  <input type="text" name="postTitle">
+  <input type="text" name="postContent">
+  <input type="text" name="postedBy">
+  <input type="submit" />
+</form>
+
+</div>
+
+ --}}
