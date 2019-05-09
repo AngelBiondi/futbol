@@ -8,3 +8,25 @@ body {
   padding-top: 56px;
 }
 
+
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 500px;
+  text-overflow: ellipsis;
+}
+
+.commentsty {
+  display: flex;
+}
+
+.commentbut {
+  outline: 1px dotted;
+  outline: 5px auto
+  
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  overflow: visible;
+}

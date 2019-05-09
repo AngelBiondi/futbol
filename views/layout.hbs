@@ -6,10 +6,10 @@
 
 
 <!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" >
+<link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css" >
 
 <!-- Custom styles for this template -->
-<link rel="stylesheet" href="./css/blog-home.css" >
+<link rel="stylesheet" href="../../css/blog-home.css" >
 
 </head>
   <body>
@@ -30,7 +30,7 @@
     <li class="nav-item">
 
       {{#if user}}
-            Welcome {{user.email}}
+           {{user.email}}
             <a href="/logout" class="btn btn-default"><span class="fa fa-user"></span> Log Out</a>
       {{else}}
             <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Log in </a>
