@@ -1,58 +1,66 @@
-
-
 <!-- Page Content -->
 <div class="container">
 
-<div class="row">
 
-<!-- Blog Entries Column -->
-<div class="col-md-8">
+  <div class="row">
+    <div class="col-md-8">
+    <!-- Blog Entries Column -->
+    <h1 class="my-4">Lastest News
+      <p> <small>Everything you need to know</small></p>
+    </h1>
 
-  <h1 class="my-4">Lastest News 
-   <p> <small>Everything you need to know</small></p>
-  </h1>
-
-  {{#each posts}}
-  <div class="card mb-4">
-    <img class="card-img-top" src= '{{image}}';   alt="Card image cap">
-    <div class="card-body">
-      <h2 class="card-title">{{title}}</h2>
-      <p class="card-text">{{text}}</p>
-      <a href="/new/{{_id}}" class="btn btn-primary">Read More &rarr;</a>
+    {{#each posts}}
+    <div class="card mb-4">
+      <img class="card-img-top" src='{{image}}' ; alt="Card image cap">
+      <div class="card-body">
+        <h2 class="card-title">{{title}}</h2>
+        <p class="card-text">{{text}}</p>
+        <a href="/new/{{_id}}" class="btn btn-primary">Read More &rarr;</a>
+      </div>
+      <div class="card-footer text-muted">
+        Posted on May 1, 2019 by
+        <a href="#">ESPN</a>
+      </div>
     </div>
-    <div class="card-footer text-muted">
-      Posted on May 1, 2019 by
-      <a href="#">ESPN</a>     
-    </div>
-  </div>
-  {{/each}}
- 
-  <!-- Pagination -->
-  <ul class="pagination justify-content-center mb-4">
-    <li class="page-item">
-      <a class="page-link" href="#">&larr; Older</a>
-    </li>
-    <li class="page-item disabled">
-      <a class="page-link" href="#">Newer &rarr;</a>
-    </li>
-  </ul>
+    {{/each}}
 
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center mb-4">
+      <li class="page-item">
+        <a class="page-link" href="#">&larr; Older</a>
+      </li>
+      <li class="page-item disabled">
+        <a class="page-link" href="#">Newer &rarr;</a>
+      </li>
+    </ul>
 </div>
+
 
 <!-- Sidebar Widgets Column -->
 <div class="col-md-4">
 
-  
+
   <!-- Side Widget -->
   <div class="card my-4">
     <h5 class="card-header">Quick News</h5>
     <div class="card-body">
-     Neymar hits a fan after losing and faces FIFA sanction..
-    </div>
+      Neymar hits a fan after losing and faces FIFA sanction..
+    </div> <hr>
+    <div class="card-body">
+     Real Madrid looks to sign Hazard, Keita and Firmino this summer..
+    </div> <hr>
+ <div class="card-body">
+    Venezuelan GoalKeeper on Barca's eye..
+    </div> <hr>
+     <div class="card-body">
+   De Ligt, Ajax and Barca already have an agree..
+    </div> <hr>
+     <div class="card-body">
+    Luis Enrique about PSG Failure "Money is not everything in soccer"
+    </div> <hr>
   </div>
 
 </div>
-
 </div>
 <!-- /.row -->
 
@@ -61,25 +69,8 @@
 
 <!-- Footer -->
 <footer class="py-5 bg-dark">
-<div class="container">
-<p class="m-0 text-center text-white">IronHack &copy; Angel Biondi</p>
-</div>
-<!-- /.container -->
+  <div class="container">
+    <p class="m-0 text-center text-white">IronHack &copy; Angel Biondi</p>
+  </div>
+  <!-- /.container -->
 </footer>
-
-
-        
-      
-   
-    {{!-- <h1>Share something</h1>
-
-<form action="/savePostToTheDatabase" method="pOSt">
-  <input type="text" name="postTitle">
-  <input type="text" name="postContent">
-  <input type="text" name="postedBy">
-  <input type="submit" />
-</form>
-
-</div>
-
- --}}

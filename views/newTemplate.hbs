@@ -3,7 +3,7 @@
     <div class="row">
 
         <!-- Blog Entries Column -->
-        <div class="col-md-8">
+        <div class="col-md">
 
 
             <div class="card mb-4">
@@ -14,24 +14,28 @@
                 </div>
             </div>
         </div>
+        <div class="col-md">
+            <div class="comsec">
+                {{#each comments}}
+                {{commentedBy}}
+                <br>
+                {{text}}
+                <hr>
+                {{/each}}
+
+                {{#if user}}
+                <form action="" method="POST" class="commentsty">
+
+                    <hr>
+
+                    <textarea name="commentSection" class="coms"></textarea>
+                    <input class="btnsec" type="submit" value="Post">
+
+                </form>
+                {{/if}}
+
+            </div>
+        </div>
+
     </div>
 </div>
-
-
-
-{{#each comments}}
-{{commentedBy}}
-<br>
-{{text}}
-<hr>
-{{/each}}
-
-{{#if user}}
-<form action="" method="POST" class="commentsty" >
-
-    Enter your comment here:
-
-    <textarea name="commentSection"></textarea>
-    <input class="commentbut"   type="submit" value="Submit your comment">
-</form>
-{{/if}}
