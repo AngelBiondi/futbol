@@ -7,8 +7,9 @@ module.exports = function(app, passport) {
 
     // show the home page (will also have our login links)
     app.get('/', function(req, res) {
-        Post.find().then(posts=>{
-            res.render('index.hbs', {user:req.user, posts})
+        let num = !isNaN(req.query.num) ? Number(req.query.num) + 1  : 0;
+        Post.find().limit(1).skip(num).then(posts=>{
+            res.render('index.hbs', {user:req.user, posts, num:num})
         })
        
     });
