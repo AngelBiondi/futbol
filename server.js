@@ -15,8 +15,7 @@ var bodyParser   = require('body-parser');
 var session      = require('express-session');
 var config = require('./config/database.js');
 
-var path = require('path');
-
+var path = require('path')
 
 // configuration ===============================================================
 mongoose.connect(config.url); // connect to our database

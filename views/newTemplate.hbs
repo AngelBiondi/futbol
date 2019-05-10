@@ -17,9 +17,12 @@
         <div class="col-md">
             <div class="comsec">
                 {{#each comments}}
-                {{!-- {{commentedBy}} --}}
+
                 <br>
-                {{text}}
+                    {{text}}
+                  {{#if owner}}
+                     <a href="/remove/{{_id}}">Remove</a> 
+                  {{/if}}
                 <hr>
                 {{/each}}
 

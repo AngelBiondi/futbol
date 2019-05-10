@@ -18,7 +18,15 @@ module.exports = function(app, passport) {
         Post.findById(req.params.id).then(post=>{
             console.log(post)
             Comment.find({postId:req.params.id}).then(comments=>{
+                comments.forEach(comment=>{
+                    console.log(comment.commentedBy, req.user._id)
+                    if(req.user && String(comment.commentedBy) == String(req.user._id)){
+                        console.log('owned')
+                        comment.owner = true; 
+                    } 
+                })
                 console.log(comments, 7)
+
                 res.render('newTemplate.hbs', {user:req.user, post, comments})
             })
         })
@@ -34,6 +42,11 @@ module.exports = function(app, passport) {
         })
     })
 
+    app.get('/remove/:id', isLoggedIn, function(req,res){
+        Comment.findByIdAndRemove(req.params.id).then(r=>{
+            res.redirect('back')
+        })
+    })
 
     app.get('/new1', function(req, res) {
         res.render('new1.hbs',{user:req.user});
