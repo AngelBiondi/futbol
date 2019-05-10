@@ -19,7 +19,7 @@ module.exports = function(app, passport) {
             console.log(post)
             Comment.find({postId:req.params.id}).then(comments=>{
                 comments.forEach(comment=>{
-                    console.log(comment.commentedBy, req.user._id)
+                    //console.log(comment.commentedBy, req.user._id)
                     if(req.user && String(comment.commentedBy) == String(req.user._id)){
                         console.log('owned')
                         comment.owner = true; 
